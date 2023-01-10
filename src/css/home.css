@@ -1,0 +1,489 @@
+/*
+====================================================================
+	                        Safewox HOME
+====================================================================
+*/
+
+@import url(/src/app.css);
+
+#home .wrapper {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 40.96%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.63) 40.96%, rgba(0, 0, 0, 0) 100%), url(/Assets/banner-image.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+====================================================================
+	Hero Section
+====================================================================
+*/
+#home .hero {
+    color: var(--white);
+    padding: 100px 80px 120px 80px;
+    /* height: 90vh; */
+}
+
+#home .hero .txt {
+    width: 50%;
+}
+
+#home .hero .txt h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 75px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#home .hero .txt p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home .hero .txt p>span {
+    font-weight: 600;
+    color: var(--white);
+}
+
+#home .hero .txt .cta {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+
+#home .hero .txt .cta .fill {
+    width: 175px;
+    display: flex;
+    justify-content: center;
+}
+
+#home .hero .txt .cta .no-fill {
+    display: flex;
+    justify-content: center;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #AFABAB80;
+    border: 1px solid #F9A543;
+}
+
+#home .hero .txt .cta .no-fill>img {
+    width: 12px;
+}
+
+/*
+====================================================================
+	Section-1
+====================================================================
+*/
+#home .section1 {
+    display: flex;
+    height: fit-content;
+    padding: 100px 0;
+    justify-content: space-between;
+    padding-right: 100px;
+    margin: 70px 0 100px;
+    /* overflow: hidden; */
+}
+
+#home .section1 .img {
+    width: 50%;
+    position: relative;
+}
+
+#home .section1 .img .ill {
+    right: 0;
+    z-index: 999;
+    position: absolute;
+}
+
+#home .section1 .img .eclipse {
+    bottom: 0;
+    left: -150px;
+    position: absolute;
+}
+
+#home .section1 .txt {
+    width: 40%;
+}
+
+#home .section1 .txt .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#home .section1 .txt h1 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 56.36px;
+    margin-bottom: 38px;
+}
+
+#home .section1 .txt p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--light-grey);
+    text-align: justify;
+}
+
+#home .section1 .txt .btn {
+    margin-top: 31px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*
+====================================================================
+	Section-2
+====================================================================
+*/
+#home .section2 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* .section2::before {
+    content: '';
+    width: 300px;
+    height: 100%;
+    z-index: 999;
+    left: 0;
+    position: absolute;
+    background: url(/Assets/fade.png);
+    background-size: cover;
+}
+
+.section2::after {
+    content: '';
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    position: absolute;
+    background: url(/Assets/fade2.png);
+    background-size: cover;
+} */
+
+#home .section2 .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#home .section2 .head .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#home .section2 .head h1 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 56.36px;
+}
+
+#home .section2 .cards {
+    height: 350px;
+}
+
+#home .section2 .cards .card {
+    margin-right: 50px;
+    position: relative;
+    width: 360px;
+    height: 295px;
+    margin-top: 40px;
+    padding: 0 20px;
+    background: var(--white);
+    box-shadow: 0px 7.77778px 28.1111px rgba(0, 0, 0, 0.0987037), 0px 2.4px 7.8px rgba(0, 0, 0, 0.065), 0px 0.977778px 3.91111px rgba(0, 0, 0, 0.051037), 0px 0.222222px 1.88889px rgba(0, 0, 0, 0.0312963);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .section2 .cards .card .icon {
+    position: absolute;
+    top: -40px;
+    background: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#home .section2 .cards .card h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#home .section2 .cards .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-grey);
+}
+
+/*
+====================================================================
+	Section-3
+====================================================================
+*/
+#home .section3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: relative;
+    margin: 170px 0;
+}
+
+#home .section3 .vec {
+    position: absolute;
+    bottom: 150px;
+    left: 300px;
+}
+
+#home .section3 .head {
+    width: 40%;
+    margin-top: 150px;
+}
+
+#home .section3 .head h1 {
+    font-weight: 600;
+    font-size: 39px;
+}
+
+#home .section3 .head p {
+    font-weight: 400;
+    font-size: 25.4951px;
+    line-height: 38px;
+}
+
+#home .section3 .cards {
+    display: grid;
+    grid-gap: 28.54px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#home .section3 .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 297px;
+    height: 349px;
+    padding: 15px;
+    background: var(--white);
+    box-shadow: 0px 5.928px 20.6931px rgba(0, 0, 0, 0.045), 0px 2.41511px 10.376px rgba(0, 0, 0, 0.0353333), 0px 0.548889px 5.01116px rgba(0, 0, 0, 0.0216667);
+    border-radius: 21.9556px;
+}
+
+#home .section3 .cards .card .icon {
+    background: #F5EFFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109.78px;
+    height: 109.78px;
+    border-radius: 50%;
+}
+
+#home .section3 .cards .card h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#home .section3 .cards .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*
+====================================================================
+	Section-4
+====================================================================
+*/
+#home .section4 {
+    height: 452px;
+    margin: 0 100px;
+    border-radius: 30px;
+    background: url(/Assets/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 44px;
+}
+
+#home .section4 h1 {
+    width: 550px;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 129.5%;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+#home .section4 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--white);
+    width: 485px;
+    margin-bottom: 22px;
+}
+
+#home .section4 form {
+    display: flex;
+}
+
+#home .section4 form input {
+    background: #FFFFFF;
+    border: 1px solid #F9A543;
+    width: 407px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 0 30px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#home .section4 form input:focus {
+    outline: none;
+}
+
+#home .section4 form .btn {
+    width: 197px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--orange);
+    background: var(--white);
+    border: none;
+}
+
+/*
+====================================================================
+	Section-5
+====================================================================
+*/
+#home .section5 {
+    margin-top: 110px;
+    padding: 50px 200px 100px;
+    background: #F4F4F4;
+}
+
+#home .section5 .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#home .section5 .head .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#home .section5 .head h1 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 56.36px;
+}
+
+#home .section5 .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+#home .section5 .flex .container .txt {
+    gap: 28px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#home .section5 .flex .container .txt:nth-child(1),
+#home .section5 .flex .container .txt:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+#home .section5 .flex .container .txt img {
+    width: fit-content;
+    height: fit-content;
+}
+
+#home .section5 .flex .container .txt hr {
+    height: 100%;
+}
+
+#home .section5 .flex .container .txt .con .heading {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#home .section5 .flex .container .txt .con .cons {
+    width: 317px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 179.94%;
+}
+
+#home .section5 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 57px 57px 179px 81px;
+    grid-gap: 20px;
+}
+
+#home .section5 form .input {
+    font-weight: 400;
+    font-size: 18px;
+    width: 300px;
+    border: 1px solid #F9A543;
+    border-radius: 10px;
+    background: transparent;
+    padding: 0 25px;
+}
+
+#home .section5 form .input:focus {
+    outline: none;
+}
+
+#home .section5 form .input:nth-child(3) {
+    grid-column: span 2;
+    width: 100%;
+}
+
+#home .section5 form .input:nth-child(4) {
+    grid-column: span 2;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#home .section5 form .btn {
+    font-weight: 600;
+    font-size: 24px;
+    border: none;
+    background: #F9A543;
+    border-radius: 50px;
+    width: 197px;
+    height: 60px;
+}
+
+/*
+====================================================================
+	THE END💯✅
+====================================================================
+*/

@@ -1,0 +1,205 @@
+/*
+====================================================================
+	                        Safewox ABOUT
+====================================================================
+*/
+
+@import url(/src/app.css);
+
+#about .wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Assets/about-hero-img.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+====================================================================
+	Hero Section
+====================================================================
+*/
+#about .hero {
+    height: 500px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#about .hero .head {
+    text-align: center;
+    width: 30%;
+}
+
+#about .hero .head .semi-heading {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#about .hero .head h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--white);
+    line-height: 122.5%;
+}
+
+/*
+====================================================================
+	Section-1
+====================================================================
+*/
+#about .section1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+
+#about .section1 img {
+    width: 634px;
+    height: 689.68px;
+}
+
+#about .section1 .txt {
+    margin-top: 70px;
+    width: 50%;
+}
+
+#about .section1 .txt .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#about .section1 .txt h1 {
+    width: 80%;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 144.5%;
+    margin-bottom: 16px;
+}
+
+#about .section1 .txt p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--light-grey);
+    text-align: justify;
+}
+
+#about .section1 .txt p>span {
+    display: block;
+    margin-bottom: 27px;
+}
+
+#about .section1 .txt .btn {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*
+====================================================================
+	Section-2
+====================================================================
+*/
+#about .section2 {
+    padding: 0 100px;
+}
+
+#about .section2 .txt {
+    position: relative;
+}
+
+#about .section2 .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about .section2 .head .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#about .section2 .head h1 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 56.36px;
+}
+
+#about .section2 .txt::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 100%;
+    border: dashed 2px var(--ash);
+}
+
+#about .section2 .txt .point {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .section2 .txt .dot::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--ash);
+}
+
+#about .section2 .txt .point .contxt h1 {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+#about .section2 .txt .point p {
+    font-weight: 400;
+    width: 441px;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--light-grey);
+}
+
+#about .section2 .txt .point img {
+    width: 432px;
+}
+
+/*
+====================================================================
+	Section-3
+====================================================================
+*/
+#about .section3 {
+    height: 452px;
+    margin: 0 100px;
+    border-radius: 30px;
+    background: url(/Assets/support\ bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 44px;
+}
+
+#about .section3 .txt h1 {
+    width: 550px;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 129.5%;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+#about .section3 .txt p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--white);
+    width: 485px;
+}
