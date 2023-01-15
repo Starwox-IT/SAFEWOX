@@ -145,6 +145,7 @@
 
 #about .section2 .txt .point:nth-child(2n+2){
     flex-direction: row-reverse;
+    margin: 100px 0;
 }
 
 #about .section2 .txt .dot::before {
