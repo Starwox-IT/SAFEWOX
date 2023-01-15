@@ -179,12 +179,14 @@
 */
 #about .section3 {
     height: 452px;
-    margin: 0 100px;
+    margin: 100px 100px;
     border-radius: 30px;
     background: url(/Assets/support\ bg.png);
     background-position: center;
     background-size: cover;
     padding: 20px 44px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #about .section3 .txt h1 {
@@ -202,4 +204,48 @@
     line-height: 30px;
     color: var(--white);
     width: 485px;
+}
+
+#about .section3 form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 57px 57px 57px 81px;
+    grid-gap: 20px;
+    min-width: 620px;
+}
+
+#about .section3 form input {
+    height: 57px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 25px;
+    outline: none;
+    border: none;
+}
+
+#about .section3 form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    grid-column: span 2;
+    height: 57px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #606060B2;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+}
+
+#about .section2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#about .section3 form input:nth-child(6) {
+    grid-column: span 2;
 }
