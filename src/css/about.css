@@ -143,6 +143,10 @@
     justify-content: space-between;
 }
 
+#about .section2 .txt .point:nth-child(2n+2){
+    flex-direction: row-reverse;
+}
+
 #about .section2 .txt .dot::before {
     content: '';
     position: absolute;
@@ -209,9 +213,11 @@
 #about .section3 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 57px 57px 57px 81px;
+    grid-template-rows: 57px 57px 57px 57px;
     grid-gap: 20px;
     min-width: 620px;
+    height: fit-content;
+    margin-top: 20px;
 }
 
 #about .section3 form input {
@@ -238,14 +244,30 @@
     border: none;
 }
 
-#about .section2::after {
+#about .section2::before {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: black;
+    width: 14px;
+    height: 9.33px;
+    background-image: url(/Assets/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    right: 0;
 }
 
 #about .section3 form input:nth-child(6) {
+    grid-column: span 2;
+}
+
+#about .section3 form .btn {
+    width: 197px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--orange);
+    background: var(--white);
+    border: none;
+    justify-self: center;
     grid-column: span 2;
 }
