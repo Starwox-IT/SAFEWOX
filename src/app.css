@@ -16,6 +16,26 @@
     --ash: #D9D9D9;
 }
 
+a {
+    text-decoration: none;
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 3px;
+    background: var(--orange);
+    border-radius: 50px;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.current li {
+    color: var(--orange);
+}
+
 .btn {
     width: fit-content;
     background-color: var(--orange);
@@ -49,11 +69,19 @@ nav ul {
     align-items: center;
 }
 
+nav ul a {
+    position: relative;
+}
+
 nav ul li {
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
     color: var(--white);
+}
+
+nav ul a li:hover{
+    color: var(--orange);
 }
 
 nav ul .btn {
@@ -202,4 +230,3 @@ footer .middle .txt p {
     font-size: 14px;
     line-height: 24px;
 }
-
