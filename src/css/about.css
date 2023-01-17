@@ -219,6 +219,7 @@
     min-width: 620px;
     height: fit-content;
     margin-top: 20px;
+    position: relative;
 }
 
 #about .section3 form input {
@@ -245,7 +246,7 @@
     border: none;
 }
 
-#about .section2::before {
+#about .section2 form::before {
     content: '';
     position: absolute;
     width: 14px;
