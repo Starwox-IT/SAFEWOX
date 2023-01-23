@@ -70,17 +70,18 @@
 
 #service .section1 .card .img .ill {
     right: 0;
-    z-index: 999;
     position: relative;
 }
 
 #service .section1 .card .img .eclipse {
+    z-index: -999;
     bottom: -150px;
     left: -250px;
     position: absolute;
 }
 
 #service .section1 .card .img .ry {
+    z-index: -999;
     bottom: -150px;
     right: -250px;
     position: absolute;

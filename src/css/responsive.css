@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 768px) {
+    .current::after{
+        display: none;
+    }
     nav .ham-menu {
         display: block;
     }
@@ -517,7 +520,7 @@
         width: 90%;
     }
 
-    #about .hero .head h1{
+    #about .hero .head h1 {
         font-size: 40px;
     }
 
@@ -525,11 +528,11 @@
         padding: 60px 40px 100px;
     }
 
-    #about .section1 .txt h1{
+    #about .section1 .txt h1 {
         font-size: 35px;
     }
 
-    #about .section2 .head h1{
+    #about .section2 .head h1 {
         font-size: 35px;
     }
 
@@ -581,6 +584,9 @@
 }
 
 @media (max-width: 481px) {
+    #about .hero .head h1 {
+        font-size: 35px;
+    }
     #about .section1 img {
         width: 100%;
         height: fit-content;
@@ -635,6 +641,103 @@
 ====================================================================
 */
 
-#service .section1 .card{
+@media (max-width: 1454px) {
+    #service .section1 .card {
+        padding: 100px 100px 200px;
+    }
+}
 
+@media (max-width: 1280px) {
+    #service .section1 .card {
+        padding: 100px 50px 200px;
+    }
+
+    #service .section2 {
+        margin: 100px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #service .hero {
+        padding-top: 193px;
+    }
+
+    #service .hero .head {
+        width: 90%;
+    }
+
+    #service .section1 .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px 80px;
+    }
+
+    #service .section1 .card:nth-child(2n+2) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px 80px;
+    }
+
+    #service .section1 .card .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #service .section1 .card .img .ill {
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    #service .section1 .card .img .eclipse,
+    #service .section1 .card .img .ry {
+        display: none;
+    }
+
+    #service .section1 .card .txt {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 481px) {
+    #service .hero .head h1 {
+        font-size: 35px;
+    }
+
+    #service .hero .head {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #service .section1 .card {
+        padding: 100px 20px 50px;
+    }
+
+    #service .section1 .card:nth-child(2n+2) {
+        padding: 100px 20px 50px;
+    }
+
+    #service .section1 .card .txt h1{
+        font-size: 35px;
+    }
+
+    #service .section2 {
+        height: fit-content;
+        margin: 100px 0;
+        padding: 20px 20px 40px;
+        border-radius: 0;
+    }
+
+    #service .section2 .txt h1,
+    #service .section2 .txt p {
+        width: 100%;
+    }
 }
