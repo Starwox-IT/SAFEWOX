@@ -33,7 +33,7 @@ a {
 }
 
 .current li {
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 .btn {
@@ -81,7 +81,7 @@ nav ul li {
 }
 
 nav ul a li:hover{
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 
 nav ul .btn {

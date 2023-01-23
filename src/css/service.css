@@ -1,0 +1,165 @@
+/*
+====================================================================
+	                        Safewox HOME
+====================================================================
+*/
+
+@import url(/src/app.css);
+
+#service .wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Assets/about-hero-img.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+====================================================================
+	Hero Section
+====================================================================
+*/
+#service .hero {
+    height: 500px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#service .hero .head {
+    text-align: center;
+    width: 50%;
+}
+
+#service .hero .head .semi-heading {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#service .hero .head h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--white);
+    line-height: 122.5%;
+}
+
+/*
+====================================================================
+	Section-1
+====================================================================
+*/
+#service .section1 {
+    overflow: hidden;
+}
+
+#service .section1 .card {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 100px 150px 200px;
+    align-items: center;
+}
+
+#service .section1 .card:nth-child(2n+2) {
+    flex-direction: row-reverse;
+    /* margin: 100px 0; */
+}
+
+#service .section1 .card .img {
+    position: relative;
+}
+
+#service .section1 .card .img .ill {
+    right: 0;
+    z-index: 999;
+    position: relative;
+}
+
+#service .section1 .card .img .eclipse {
+    bottom: -150px;
+    left: -250px;
+    position: absolute;
+}
+
+#service .section1 .card .img .ry {
+    bottom: -150px;
+    right: -250px;
+    position: absolute;
+}
+
+#service .section1 .card .txt {
+    width: 50%;
+}
+
+#service .section1 .card .txt .semi-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+#service .section1 .card .txt h1 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 56.36px;
+    margin-bottom: 38px;
+}
+
+#service .section1 .card .txt p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--light-grey);
+    text-align: justify;
+}
+
+#service .section1 .card .txt .btn {
+    margin-top: 31px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*
+====================================================================
+	Section-2
+====================================================================
+*/
+#service .section2 {
+    height: 475px;
+    margin: 100px 100px;
+    border-radius: 30px;
+    background: url(/Assets/background-2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#service .section2 .txt h1 {
+    width: 550px;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 129.5%;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+#service .section2 .txt p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--white);
+    width: 485px;
+}
+
+#service .section2 .txt .btn {
+    margin-top: 20px;
+    width: 197px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--orange);
+    background: var(--white);
+    border: none;
+    justify-self: center;
+    grid-column: span 2;
+}
