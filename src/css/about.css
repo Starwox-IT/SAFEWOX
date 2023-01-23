@@ -216,7 +216,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 57px 57px 57px 57px;
     grid-gap: 20px;
-    min-width: 620px;
+    width: 620px;
     height: fit-content;
     margin-top: 20px;
     position: relative;

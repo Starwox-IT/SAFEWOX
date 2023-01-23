@@ -7,7 +7,7 @@
 @import url(/src/app.css);
 
 #home .wrapper {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 40.96%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.63) 40.96%, rgba(0, 0, 0, 0) 100%), url(/Assets/banner-image.png);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 40.96%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.63) 40.96%, rgba(0, 0, 0, 0) 100%), url(/Assets/banner-image.webp);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 
 #home .hero .txt p>span {
     font-weight: 600;
-    color: var(--white);
+    color: var(--orange);
 }
 
 #home .hero .txt .cta {
@@ -101,7 +101,7 @@
 }
 
 #home .section1 .img .eclipse {
-    bottom: 0;
+    bottom: -106px;
     left: -150px;
     position: absolute;
 }
@@ -147,9 +147,14 @@
     margin-bottom: 100px;
 }
 
-/* .section2::before {
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    display: none;
+}
+
+.section2::before {
     content: '';
-    width: 300px;
+    width: 10%;
     height: 100%;
     z-index: 999;
     left: 0;
@@ -160,7 +165,7 @@
 
 .section2::after {
     content: '';
-    width: 300px;
+    width: 10%;
     height: 100%;
     top: 0;
     right: 0;
@@ -168,7 +173,7 @@
     position: absolute;
     background: url(/Assets/fade2.png);
     background-size: cover;
-} */
+}
 
 #home .section2 .head {
     text-align: center;
@@ -316,13 +321,13 @@
 ====================================================================
 */
 #home .section4 {
-    height: 452px;
+    /* height: 452px; */
     margin: 0 100px;
     border-radius: 30px;
     background: url(/Assets/background.png);
     background-position: center;
     background-size: cover;
-    padding: 20px 44px;
+    padding: 20px 44px 40px;
 }
 
 #home .section4 h1 {
