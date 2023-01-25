@@ -200,6 +200,11 @@ footer .top .icons img {
     height: 24px;
 }
 
+footer .bottom p{
+    font-size: 11px !important;
+    opacity: 60%;
+}
+
 footer .middle {
     display: flex;
     flex-direction: column;

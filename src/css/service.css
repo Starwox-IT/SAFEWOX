@@ -60,8 +60,7 @@
 }
 
 #service .section1 .card:nth-child(2n+2) {
-    flex-direction: row-reverse;
-    /* margin: 100px 0; */
+    flex-direction: row-reverse;    
 }
 
 #service .section1 .card .img {
@@ -109,7 +108,7 @@
     font-weight: 500;
     line-height: 30px;
     color: var(--light-grey);
-    text-align: justify;
+    text-align: left;
 }
 
 #service .section1 .card .txt .btn {
