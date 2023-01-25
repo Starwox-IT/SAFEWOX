@@ -8,6 +8,26 @@
 
 /*
 ====================================================================
+	                        General Style
+====================================================================
+*/
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 15px !important;
+    }
+    input, select, option, textarea{
+        font-size: 13px!important;
+    }
+    h1{
+        font-size: 25px !important;
+        line-height: 40px !important;
+    }
+}
+
+/*
+====================================================================
 	                        Safewox NAVBAR & FOOTER
 ====================================================================
 */
@@ -88,11 +108,19 @@
         background: linear-gradient(to right, #fddb92, #F9A543, #ff9720);
         margin-top: 50px;
         font-size: 20px !important;
-        width: 80%;
+        width: 100%;
     }
 
     nav .ham-menu {
         z-index: 999;
+    }
+
+    footer .middle .links p {
+        font-size: 13px !important;
+    }
+
+    footer .middle .txt p{
+        font-size: 13px !important;
     }
 }
 
@@ -364,11 +392,6 @@
 @media (max-width: 481px) {
     #home .hero .txt {
         width: 100%;
-    }
-
-    #home .head h1,
-    #home .txt h1 {
-        font-size: 30px !important;
     }
 
     #home .section1 .txt h1 {
@@ -751,6 +774,119 @@
 
     #service .section2 .txt h1,
     #service .section2 .txt p {
+        width: 100%;
+    }
+}
+
+
+
+/*
+====================================================================
+	                        Safewox Contact
+====================================================================
+*/
+@media (max-width: 1280px) {
+    #contact section .icon-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    #contact section .contact-wrapper {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact nav ul li{
+        color: var(--white);
+    }
+
+    #contact section {
+        gap: none;
+    }
+
+    #contact section .icon-wrapper {
+        display: none;
+    }
+
+    #contact section .contact-wrapper {
+        margin: 150px auto 50px;
+        padding: 40px;
+    }
+
+    #contact section .contact-wrapper .input-wrapper input {
+        width: 100%;
+    }
+
+    #contact section .contact-wrapper h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    #contact section .contact-wrapper p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 40px;
+        font-size: 14px;
+    }
+
+    #contact section .contact-wrapper .flex .txt-display span {
+        font-size: 16px;
+    }
+
+    #contact section .contact-wrapper .flex {
+        gap: 5px !important;
+        margin-bottom: 30px;
+    }
+
+    #contact section .contact-wrapper .input-wrapper input {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    #contact section .contact-wrapper .flex .txt-display {
+        margin-left: 30px;
+    }
+
+    #contact section .contact-wrapper .input-wrapper .btn {
+        font-size: 16px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 481px) {
+    #contact section .contact-wrapper .flex {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    #contact section .contact-wrapper .flex .txt-display {
+        margin: 0;
+        text-align: left;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #contact section .contact-wrapper .flex .txt-display div {
+        /* background: #191919; */
+        width: 51px;
+        height: 51px;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact section .contact-wrapper .input-wrapper .btn {
         width: 100%;
     }
 }
