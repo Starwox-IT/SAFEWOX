@@ -30,9 +30,10 @@
 }
 
 @media (max-width: 768px) {
-    .current::after{
+    .current::after {
         display: none;
     }
+
     nav .ham-menu {
         display: block;
     }
@@ -473,6 +474,11 @@
 }
 
 @media (max-width: 1280px) {
+
+    #about .hero .head {
+        width: 50%;
+    }
+
     #about .section1 img {
         width: 560px;
         height: 607.68px;
@@ -587,6 +593,7 @@
     #about .hero .head h1 {
         font-size: 35px;
     }
+
     #about .section1 img {
         width: 100%;
         height: fit-content;
@@ -654,6 +661,12 @@
 
     #service .section2 {
         margin: 100px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #service .section1 .card .img .ill {
+        width: 90%;
     }
 }
 
@@ -725,7 +738,7 @@
         padding: 100px 20px 50px;
     }
 
-    #service .section1 .card .txt h1{
+    #service .section1 .card .txt h1 {
         font-size: 35px;
     }
 

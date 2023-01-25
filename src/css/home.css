@@ -128,7 +128,7 @@
     font-weight: 500;
     line-height: 30px;
     color: var(--light-grey);
-    text-align: justify;
+    text-align: left;
 }
 
 #home .section1 .txt .btn {

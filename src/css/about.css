@@ -82,7 +82,7 @@
     font-weight: 500;
     line-height: 30px;
     color: var(--light-grey);
-    text-align: justify;
+    text-align: left;
 }
 
 #about .section1 .txt p>span {
