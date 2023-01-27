@@ -88,7 +88,7 @@
         </div>
         <form class="input-wrapper">
           <div>
-            <input type="" placeholder="Name *" pattern="[a-zA-Z]+" minlength="2" maxlength="10" title="Please enter a correct name" required>
+            <input type="" placeholder="Name *" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="25" title="Please enter a correct name" required>
           </div>
           <div>
             <input type="" placeholder="Email *" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" multiple required>
