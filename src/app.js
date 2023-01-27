@@ -46,25 +46,3 @@ $(document).ready(function () {
     owl.trigger("stop.owl.autoplay");
   });
 });
-
-//submit btn
-function handleSubmit(event) {
-  event.preventDefault(); // prevent the form from refreshing the page
-  const form = event.target;
-  const inputs = form.querySelectorAll("input");
-  let isValid = true;
-
-  // validate form inputs
-  inputs.forEach((input) => {
-    if (!input.checkValidity()) {
-      isValid = false;
-    }
-  });
-
-  if (isValid) {
-    // display success message
-    const successMessage = document.getElementById("success-message");
-    successMessage.style.display = "block";
-    form.reset();
-  }
-}
