@@ -76,6 +76,7 @@
             <div>
               <img src="./Assets/call.png" alt="">
             </div>
+            <!-- <a href="tel:+447840361050">+447840361050</a> -->
             <span>(+44)7840361050</span>
           </div>
           <div class="txt-display">
@@ -87,16 +88,16 @@
         </div>
         <form class="input-wrapper">
           <div>
-            <input type="" placeholder="Name *">
+            <input type="" placeholder="Name *" pattern="[a-zA-Z]+" minlength="2" maxlength="10" title="Please enter a correct name" required>
           </div>
           <div>
-            <input type="" placeholder="Email *">
+            <input type="" placeholder="Email *" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" multiple required>
           </div>
           <div>
-            <input type="" placeholder="Phone *">
+            <input type="" placeholder="Phone *" pattern="^([0|\+[0-9]{1,3})?([0-9]{6})$" minlength="6" maxlength="15" title="Please enter a correct phone number" required >
           </div>
           <div>
-            <input type="" placeholder="Message">
+            <input type="" placeholder="Message" minlength="8" maxlength="500" required >
           </div>
           <button class="btn" type="submit">Send</button>
         </form>
