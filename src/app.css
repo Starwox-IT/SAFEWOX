@@ -217,10 +217,17 @@ footer .middle .links {
     justify-content: center;
 }
 
-footer .middle .links p {
+footer .middle .links a{
+    color: var(--white);
+}
+footer .middle .links a:hover{
+    color: var(--orange);
+}
+
+footer .middle .links a p {
     width: fit-content;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 footer .middle .txt {

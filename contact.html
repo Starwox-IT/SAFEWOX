@@ -76,6 +76,7 @@
             <div>
               <img src="./Assets/call.png" alt="">
             </div>
+            <!-- <a href="tel:+447840361050">+447840361050</a> -->
             <span>(+44)7840361050</span>
           </div>
           <div class="txt-display">
@@ -85,18 +86,19 @@
             <span>safewox@gmail.com</span>
           </div>
         </div>
-        <form class="input-wrapper">
+        <form class="input-wrapper" action="https://formspree.io/f/xknaooqb"
+        method="POST">
           <div>
-            <input type="" placeholder="Name *">
+            <input type="text" name="name" placeholder="Name *" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="25" title="Please enter a correct name" required>
           </div>
           <div>
-            <input type="" placeholder="Email *">
+            <input type="email" name="email" placeholder="Email *" multiple required>
           </div>
           <div>
-            <input type="" placeholder="Phone *">
+            <input type="tel" name="phone number" placeholder="Phone *" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" minlength="6" maxlength="15" title="Please enter a correct phone number" required >
           </div>
           <div>
-            <input type="" placeholder="Message">
+            <input type="text" name="message" placeholder="Message" minlength="8" maxlength="500" required >
           </div>
           <button class="btn" type="submit">Send</button>
         </form>
@@ -118,13 +120,21 @@
       </div>
       <div class="middle">
         <div class="links">
-          <p>Home</p>
+          <a href="/index.html">
+            <p>Home</p>
+          </a>
           <hr />
-          <p>About</p>
+          <a href="/about.html">
+            <p>About</p>
+          </a>
           <hr />
-          <p>Service</p>
+          <a href="/about.html">
+            <p>Service</p>
+          </a>
           <hr />
-          <p>Contact</p>
+          <a href="#">
+            <p>Contact</p>
+          </a>
         </div>
         <div class="txt">
           <p>
@@ -141,5 +151,4 @@
 
     <script src="/src/app.js"></script>
 </body>
-
 </html>

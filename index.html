@@ -220,7 +220,9 @@
       to start working together.you’ll be up and running in no time.
     </p>
     <form action="">
-      <input type="email" placeholder="Enter your Email." />
+      <input type="email" placeholder="Enter your Email."
+        pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+        multiple required />
       <button class="btn" type="submit">Send</button>
     </form>
   </div>
@@ -259,11 +261,13 @@
           </div>
         </div>
       </div>
-      <form action="">
-        <input class="input" type="text" placeholder="Name" />
-        <input class="input" type="email" placeholder="Email" />
-        <input class="input" type="text" placeholder="Subject" />
-        <textarea class="input" placeholder="Message"></textarea>
+      <form autocomplete="on" action="https://formspree.io/f/xwkjvvvw"
+      method="POST">
+        <input class="input" type="text" name="name" placeholder="Name" pattern="^[a-zA-Z\s]*$" title="Please enter your ll name"
+          minlength="2" maxlength="40" required />
+        <input class="input" type="email" name="email" placeholder="Email" multiple required />
+        <input class="input" type="text" name="subject" placeholder="Subject" minlength="5" maxlength="40" required />
+        <textarea class="input" name="message" placeholder="Message" minlength="15" maxlength="500" required></textarea>
         <button class="btn" type="submit">Send</button>
       </form>
     </div>
@@ -284,13 +288,21 @@
     </div>
     <div class="middle">
       <div class="links">
-        <p>Home</p>
+        <a href="#">
+          <p>Home</p>
+        </a>
         <hr />
-        <p>About</p>
+        <a href="/about.html">
+          <p>About</p>
+        </a>
         <hr />
-        <p>Service</p>
+        <a href="/service.html">
+          <p>Service</p>
+        </a>
         <hr />
-        <p>Contact</p>
+        <a href="/contact.html">
+          <p>Contact</p>
+        </a>
       </div>
       <div class="txt">
         <p>
@@ -304,6 +316,45 @@
       <p>© 2022 Safewox Solutions | All Rights Reserved</p>
     </div>
   </footer>
+
+  <script>
+    // Owlcarousel
+    $(document).ready(function () {
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        margin: 0,
+        nav: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            margin: 20,
+          },
+          600: {
+            items: 2,
+            nav: true,
+          },
+          999: {
+            items: 3,
+            nav: true,
+          },
+          1200: {
+            items: 4,
+            nav: true,
+          },
+        },
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    });
+  </script>
 
   <script src="/src/app.js"></script>
 </body>

@@ -185,18 +185,22 @@
             time.
           </p>
         </div>
-        <form action="">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Phone" />
-          <input type="text" placeholder="Email" />
-          <select class="select">
-            <option class="option">My Self</option>
+        <form id="form" action="https://formspree.io/f/mknaoojv"
+        method="POST">
+          <input type="text" name="first name" placeholder="First Name" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="20" required />
+          <input type="text" name="last name" placeholder="Last Name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="20" required />
+          <input type="tel" name="phone number" placeholder="Phone" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" minlength="6" maxlength="15" title="Please enter a correct phone number" required />
+          <input type="email" name="email" placeholder="Email" multiple required/>
+          <select class="select" name="applying">
+            <option class="option">For my Self</option>
             <option class="option">For a Company</option>
           </select>
-          <input type="text" placeholder="Company" />
+          <input type="text" name="company" placeholder="Company" />
+          <div id="success-message" style="display:none">Success!</div>
+          <div>
           <button class="btn" type="submit">Submit</button>
-        </form>
+          </div>
+      </form>
       </div>
     </main>
 
@@ -215,13 +219,21 @@
       </div>
       <div class="middle">
         <div class="links">
-          <p>Home</p>
+          <a href="/index.html">
+            <p>Home</p>
+          </a>
           <hr />
-          <p>About</p>
+          <a href="#">
+            <p>About</p>
+          </a>
           <hr />
-          <p>Service</p>
+          <a href="/service.html">
+            <p>Service</p>
+          </a>
           <hr />
-          <p>Contact</p>
+          <a href="/contact.html">
+            <p>Contact</p>
+          </a>
         </div>
         <div class="txt">
           <p>
