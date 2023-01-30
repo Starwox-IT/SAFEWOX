@@ -99,6 +99,16 @@
           </div>
           <div>
             <input type="text" name="message" placeholder="Message" minlength="8" maxlength="500" required >
+            <input type="" placeholder="Name *" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="25" title="Please enter a correct name" required>
+          </div>
+          <div>
+            <input type="" placeholder="Email *" multiple required>
+          </div>
+          <div>
+            <input type="" placeholder="Phone *" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" minlength="6" maxlength="15" title="Please enter a correct phone number" required >
+          </div>
+          <div>
+            <input type="" placeholder="Message" minlength="8" maxlength="500" required >
           </div>
           <button class="btn" type="submit">Send</button>
         </form>

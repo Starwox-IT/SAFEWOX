@@ -185,6 +185,7 @@
             time.
           </p>
         </div>
+
         <form id="form" action="https://formspree.io/f/mknaoojv"
         method="POST">
           <input type="text" name="first name" placeholder="First Name" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="20" required />
@@ -196,6 +197,18 @@
             <option class="option">For a Company</option>
           </select>
           <input type="text" name="company" placeholder="Company" />
+
+        <form id="form">
+          <input type="text" placeholder="First Name" pattern="^[a-zA-Z\s]*$" minlength="2" maxlength="20" required />
+          <input type="text" placeholder="Last Name" pattern="[a-zA-Z0-9]+" minlength="2" maxlength="20" required />
+          <input type="tel" placeholder="Phone" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" minlength="6" maxlength="15" title="Please enter a correct phone number" required />
+          <input type="email" placeholder="Email" multiple required/>
+          <select class="select">
+            <option class="option">My Self</option>
+            <option class="option">For a Company</option>
+          </select>
+          <input type="text" placeholder="Company" />
+          
           <div id="success-message" style="display:none">Success!</div>
           <div>
           <button class="btn" type="submit">Submit</button>

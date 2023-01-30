@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -223,6 +222,7 @@
       <input type="email" placeholder="Enter your Email."
         pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
         multiple required />
+      <input type="email" placeholder="Enter your Email." pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" multiple required/>
       <button class="btn" type="submit">Send</button>
     </form>
   </div>
@@ -268,6 +268,11 @@
         <input class="input" type="email" name="email" placeholder="Email" multiple required />
         <input class="input" type="text" name="subject" placeholder="Subject" minlength="5" maxlength="40" required />
         <textarea class="input" name="message" placeholder="Message" minlength="15" maxlength="500" required></textarea>
+      <form action="">
+        <input class="input" type="text" placeholder="Name" pattern="^[a-zA-Z\s]*$" title="Please enter your ll name" minlength="2" maxlength="40" required />
+        <input class="input" type="email" placeholder="Email" multiple required/>
+        <input class="input" type="text" placeholder="Subject" minlength="5" maxlength="40" required />
+        <textarea class="input" placeholder="Message" minlength="15" maxlength="500" required></textarea>
         <button class="btn" type="submit">Send</button>
       </form>
     </div>
