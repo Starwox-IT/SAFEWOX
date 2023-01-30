@@ -10,19 +10,6 @@ document.getElementById('form').addEventListener('submit', function () {
   alert("THANK YOU!");
 }, false);
 
-//submit btn
-function handleSubmit(event) {
-  event.preventDefault(); // prevent the form from refreshing the page
-  const form = event.target;
-  const inputs = form.querySelectorAll("input");
-  let isValid = true;
-
-  // validate form inputs
-  inputs.forEach((input) => {
-    if (!input.checkValidity()) {
-      isValid = false;
-    }
-  });
 // Owlcarousel
 $(document).ready(function () {
   var owl = $(".owl-carousel");
