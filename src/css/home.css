@@ -419,11 +419,12 @@
     height: 80px;
     display: flex;
     align-items: center;
+    
 }
 
 #home .section5 .flex .container .txt:nth-child(1),
 #home .section5 .flex .container .txt:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 #home .section5 .flex .container .txt img {
