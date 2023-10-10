@@ -8,11 +8,10 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/src/css/home.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="/src/css/responsive.css" />
   <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon" />
-  <!-- Owl-Carousel -->
-  <link rel="stylesheet" href="/lib/owl.carousel.min.css" />
-  <link rel="stylesheet" href="/lib/owl.theme.default.min.css" />
-  <script src="/lib/jquery.min.js"></script>
-  <script src="/lib/owl.carousel.js"></script>
+
+  <!-- Swiper slider -->
+  <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+  
 </head>
 
 <body id="home">
@@ -98,59 +97,63 @@
       <p class="semi-heading">Service</p>
       <h1>What We Offer</h1>
     </div>
-    <div class="cards owl-carousel owl-theme">
-      <div class="card item">
-        <div class="icon">
-          <img src="/Assets/customer-care icon.svg" alt="" />
+
+    <div class="cards swi swiper">
+      <div class="swiper-wrapper main-service">
+        <div class="card item swiper-slide">
+          <div class="icon">
+            <img src="/Assets/customer-care icon.svg" alt="" />
+          </div>
+          <h4>Virtual Assistance Services</h4>
+          <p>
+            Administrative, technical, or creative (social) assistance to
+            clients across the world.
+          </p>
         </div>
-        <h4>Virtual Assistance Services</h4>
-        <p>
-          Administrative, technical, or creative (social) assistance to
-          clients across the world.
-        </p>
-      </div>
-      <div class="card item">
-        <div class="icon">
-          <img src="/Assets/admin.svg" alt="" />
+        <div class="card item swiper-slide">
+          <div class="icon">
+            <img src="/Assets/admin.svg" alt="" />
+          </div>
+          <h4>Administrative Assistance</h4>
+          <p>
+            Providing day-to-day operational support to professionals, helping them stay organized, handling tasks that
+            allow them focus on more advanced responsibilities.
+          </p>
         </div>
-        <h4>Administrative Assistance</h4>
-        <p>
-          Providing day-to-day operational support to professionals, helping them stay organized, handling tasks that
-          allow them focus on more advanced responsibilities.
-        </p>
-      </div>
-      <div class="card item">
-        <div class="icon">
-          <img src="/Assets/data.svg" alt="" />
+        <div class="card item swiper-slide">
+          <div class="icon">
+            <img src="/Assets/data.svg" alt="" />
+          </div>
+          <h4>Data Analysis
+            Services</h4>
+          <p>
+            Technical experts who collect and store data on sales numbers, market research, logistics, linguistics, or
+            other behaviors.
+          </p>
         </div>
-        <h4>Data Analysis
-          Services</h4>
-        <p>
-          Technical experts who collect and store data on sales numbers, market research, logistics, linguistics, or
-          other behaviors.
-        </p>
-      </div>
-      <div class="card item">
-        <div class="icon">
-          <img src="/Assets/customer-care icon.svg" alt="" />
+        <div class="card item swiper-slide">
+          <div class="icon">
+            <img src="/Assets/customer-care icon.svg" alt="" />
+          </div>
+          <h4>Customer Care Representative</h4>
+          <p>
+            People-oriented professionals who have been trained to support your customers by providing helpful
+            information, answering questions, and responding to complaints or orders appropriately
+          </p>
         </div>
-        <h4>Customer Care Representative</h4>
-        <p>
-          People-oriented professionals who have been trained to support your customers by providing helpful
-          information, answering questions, and responding to complaints or orders appropriately
-        </p>
-      </div>
-      <div class="card item">
-        <div class="icon">
-          <img src="/Assets/IT support.svg" alt="" />
+        <div class="card item swiper-slide">
+          <div class="icon">
+            <img src="/Assets/IT support.svg" alt="" />
+          </div>
+          <h4>IT Support
+            Services</h4>
+          <p>
+            IT support officers will be mainly responsible for the smooth running of computer systems, routers, switches,
+            internet and ensure users get maximum benefits from them.
+          </p>
         </div>
-        <h4>IT Support
-          Services</h4>
-        <p>
-          IT support officers will be mainly responsible for the smooth running of computer systems, routers, switches,
-          internet and ensure users get maximum benefits from them.
-        </p>
       </div>
+      <div class="swiper-pagination pag"></div>
     </div>
   </div>
 
@@ -282,8 +285,6 @@
       </div>
       <hr />
       <div class="icons">
-        <img src="/Assets/facebook.png" alt="" />
-        <img src="/Assets/twitter.png" alt="" />
         <img src="/Assets/linkedin.png" alt="" />
         <img src="/Assets/instagram.png" alt="" />
       </div>
@@ -313,52 +314,21 @@
           effectively.
         </p>
       </div>
+
+      <div class="phone-email">
+        <p>Email : <span>official@safewox.com</span></p>
+        <p>Phone : <span>+1 (432) 271 1963</span></p>
+      </div>
+
     </div>
     <div class="bottom">
       <p>© 2022 Safewox Solutions | All Rights Reserved</p>
     </div>
   </footer>
 
-  <script>
-    // Owlcarousel
-    $(document).ready(function () {
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        margin: 0,
-        nav: false,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1,
-            margin: 20,
-          },
-          600: {
-            items: 2,
-            nav: true,
-          },
-          999: {
-            items: 3,
-            nav: true,
-          },
-          1200: {
-            items: 4,
-            nav: true,
-          },
-        },
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [1000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-    });
-  </script>
-
   <script src="/src/app.js"></script>
+  <script src="/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
 </body>
-
 </html>

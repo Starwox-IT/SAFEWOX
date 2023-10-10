@@ -161,7 +161,7 @@ nav .ham-menu .line:nth-child(2) {
 ====================================================================
 */
 footer {
-    height: 309px;
+    height: 409px;
     background: var(--grey);
     color: var(--white);
     display: flex;
@@ -235,6 +235,16 @@ footer .middle .txt {
     width: 725px;
     display: flex;
     align-self: center;
+}
+
+.phone-email{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.phone-email span{
+    color: #F9A543;
 }
 
 footer .middle .txt p {

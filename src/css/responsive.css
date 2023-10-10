@@ -124,6 +124,14 @@
     }
 }
 
+@media (max-width: 487px){
+    .phone-email{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
 @media (max-width: 481px) {
     footer {
         height: fit-content;
@@ -145,7 +153,6 @@
     footer .middle .links {
         gap: 10px;
     }
-
 
     footer .middle .txt {
         text-align: center;
