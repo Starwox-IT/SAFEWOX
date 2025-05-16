@@ -71,3 +71,9 @@ a {
     color: #3498db;
     text-decoration: none;
 }
+
+@media (max-width: 768px){
+    .privacy-policy{
+        padding-top: 130px;
+    }
+}
