@@ -253,3 +253,14 @@ footer .middle .txt p {
     font-size: 14px;
     line-height: 24px;
 }
+
+@media (max-width: 418px){
+    footer .middle .links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .middle .links hr{
+        display: none;
+    }
+}
