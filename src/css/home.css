@@ -29,9 +29,9 @@
 }
 
 #home .hero .txt h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
-    line-height: 75px;
+    line-height: 65px;
     width: 80%;
     margin-bottom: 20px;
 }
@@ -117,10 +117,10 @@
 }
 
 #home .section1 .txt h1 {
-    font-size: 39px;
+    font-size: 29px;
     font-weight: 600;
-    line-height: 56.36px;
-    margin-bottom: 38px;
+    
+    margin-bottom: 10px;
 }
 
 #home .section1 .txt p {
