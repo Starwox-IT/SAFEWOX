@@ -274,3 +274,7 @@
     grid-column: span 2;
 }
 
+.phone {
+    display: flex;
+    gap: 0.5em;
+}

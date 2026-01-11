@@ -77,3 +77,8 @@ a {
         padding-top: 130px;
     }
 }
+
+.phone {
+    display: flex;
+    gap: 0.5em;
+}

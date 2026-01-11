@@ -901,4 +901,10 @@
     #contact section .contact-wrapper .input-wrapper .btn {
         width: 100%;
     }
+
+    .phone{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
 }
